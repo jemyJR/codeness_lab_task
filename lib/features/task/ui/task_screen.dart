@@ -1,4 +1,7 @@
+import 'package:codeness_lab_task/core/constants/app_colors.dart';
+import 'package:codeness_lab_task/core/helpers/spacing.dart';
 import 'package:codeness_lab_task/features/logic/cubit/task_cubit.dart';
+import 'package:codeness_lab_task/features/task/ui/widgets/custom_text_form_field.dart';
 import 'package:codeness_lab_task/features/task/ui/widgets/tabbar_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,7 +28,13 @@ class TaskScreen extends StatelessWidget {
           }
           return Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-            child: TabBarRow(selectedIndex: selectedIndex),
+            child: Column(
+              children: [
+                TabBarRow(selectedIndex: selectedIndex),
+                verticalSpace(10),
+                const CustomTextFormFireld(),
+              ],
+            ),
           );
         },
       ),
