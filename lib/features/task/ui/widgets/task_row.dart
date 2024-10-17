@@ -1,5 +1,5 @@
-import 'package:codeness_lab_task/core/constants/app_colors.dart';
-import 'package:codeness_lab_task/features/task/data/models/task_model.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../data/models/task_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

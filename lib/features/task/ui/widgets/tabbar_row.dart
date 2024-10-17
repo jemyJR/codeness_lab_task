@@ -1,8 +1,9 @@
-import 'package:codeness_lab_task/core/helpers/spacing.dart';
-import 'package:codeness_lab_task/features/task/logic/task_cubit.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/tab_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/helpers/spacing.dart';
+import '../../logic/task_cubit.dart';
+import 'tab_container.dart';
 
 class TabBarRow extends StatelessWidget {
   final int selectedIndex;

@@ -1,10 +1,10 @@
-import 'package:codeness_lab_task/core/helpers/spacing.dart';
-import 'package:codeness_lab_task/features/task/data/models/task_model.dart';
-import 'package:codeness_lab_task/features/task/logic/task_cubit.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/custom_button.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/custom_text_form_field.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/tabbar_row.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/task_row.dart';
+import '../../../../core/helpers/spacing.dart';
+import '../../data/models/task_model.dart';
+import '../../logic/task_cubit.dart';
+import 'custom_button.dart';
+import 'custom_text_form_field.dart';
+import 'tabbar_row.dart';
+import 'task_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

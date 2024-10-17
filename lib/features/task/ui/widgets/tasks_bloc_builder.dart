@@ -1,6 +1,6 @@
-import 'package:codeness_lab_task/features/task/data/models/task_model.dart';
-import 'package:codeness_lab_task/features/task/logic/task_cubit.dart';
-import 'package:codeness_lab_task/features/task/ui/widgets/task_screen_body.dart';
+import '../../data/models/task_model.dart';
+import '../../logic/task_cubit.dart';
+import 'task_screen_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
