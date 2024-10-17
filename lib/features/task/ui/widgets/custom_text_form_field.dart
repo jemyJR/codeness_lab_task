@@ -6,11 +6,14 @@ import '../../../../core/constants/app_colors.dart';
 class CustomTextFormFireld extends StatelessWidget {
   const CustomTextFormFireld({
     super.key,
+    this.controller,
   });
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.grey,
