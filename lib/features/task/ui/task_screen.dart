@@ -1,4 +1,4 @@
-import 'package:codeness_lab_task/features/task/ui/widgets/tasks_bloc_builder.dart';
+import 'widgets/tasks_bloc_builder.dart';
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_style.dart';
