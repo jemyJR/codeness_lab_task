@@ -9,4 +9,17 @@ class AppStyle {
     fontWeight: FontWeight.bold,
     color: AppColors.black,
   );
+  static TextStyle font12White = TextStyle(
+    fontSize: 12.sp,
+    color: AppColors.white,
+  );
+  static TextStyle font12Blue = TextStyle(
+    fontSize: 12.sp,
+    color: AppColors.blue,
+  );
+  static TextStyle font16BlackBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+  );
 }
