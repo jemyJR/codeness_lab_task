@@ -1,5 +1,7 @@
-import 'package:codeness_lab_task/core/constants/app_colors.dart';
+import 'package:codeness_lab_task/features/logic/cubit/task_cubit.dart';
+import 'package:codeness_lab_task/features/task/ui/widgets/tabbar_row.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/constants/app_style.dart';
@@ -15,11 +17,17 @@ class TaskScreen extends StatelessWidget {
           child: Text('Task Screen', style: AppStyle.font20BlackBold),
         ),
       ),
-      body: const Center(
-        child: Text(
-          'This is the task screen',
-          style: TextStyle(fontSize: 24),
-        ),
+      body: BlocBuilder<TaskCubit, TaskState>(
+        builder: (context, state) {
+          int selectedIndex = 0;
+          if (state is TaskSelected) {
+            selectedIndex = state.index;
+          }
+          return Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
+            child: TabBarRow(selectedIndex: selectedIndex),
+          );
+        },
       ),
     );
   }
