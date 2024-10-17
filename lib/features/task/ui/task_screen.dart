@@ -1,4 +1,8 @@
+import 'package:codeness_lab_task/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../core/constants/app_style.dart';
 
 class TaskScreen extends StatelessWidget {
   const TaskScreen({super.key});
@@ -7,7 +11,9 @@ class TaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Task Screen'),
+        title: Center(
+          child: Text('Task Screen', style: AppStyle.font20BlackBold),
+        ),
       ),
       body: const Center(
         child: Text(
